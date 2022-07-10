@@ -1,0 +1,23 @@
+.Error{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.error-page h1{
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: 'Pattaya', sans-serif;
+}
+.error-page h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(211, 110, 110);
+}
+.error-page h1,.error-page h2{
+    text-shadow: 10px 10px 10px #000,-10px -10px 10px #000;
+}

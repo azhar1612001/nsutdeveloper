@@ -1,0 +1,24 @@
+.Register{
+    width: 100%;
+    height: 80Vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.register-page{
+    margin: 10px;
+    padding: 10px;
+}
+.Register h1{
+    font-family: 'Pattaya', sans-serif;
+    font-weight: bolder;
+}
+.col-md-6{
+    text-align: left;
+}
+@media (max-width: 1000px){
+    .Register{
+        margin: 10vh 0;
+    }
+}

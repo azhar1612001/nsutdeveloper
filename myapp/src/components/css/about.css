@@ -1,0 +1,45 @@
+.about{
+	background: rgb(233 239 241);
+	overflow: hidden;
+}
+.about-top{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30vh;
+}
+.top-content h1{
+	color: #fff;
+	text-shadow: 10px 10px 10px #000,-10px -10px 10px #000;
+	font-weight: bolder;
+	font-size: 50px;
+	font-family: 'Pattaya', sans-serif;
+}
+.aboutus{
+	display: flex;
+    padding: 10px;
+    background: black;
+    color: #fff;
+	margin-bottom: 20px;
+}
+.aboutus-content{
+	padding: 10px;
+}
+.lower-about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px 0;
+}
+@media (max-width: 1000px){
+	.aboutus{
+		flex-direction: column;
+	}
+	.about-top{
+		height: 20vh;
+	}
+	.aboutus-img img{
+		width: 100%;
+	}
+}

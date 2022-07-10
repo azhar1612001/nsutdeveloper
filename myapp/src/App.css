@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Pattaya&display=swap&family=Noto+Sans+JP&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  padding-top: 10vh;
+  width: 100%;
+  min-height: 100vh;
+}
+header{
+  background: #fff;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  z-index: 100 !important;
+}
+.header-main{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.logo{
+  flex-basis: 20%;
+  font-family: 'Pattaya', sans-serif;
+  text-shadow: 1px 4px 2px #dc3545;
+}
+.logo a{
+  text-decoration: none;
+  color: #000;
+}
+.head-menu{
+  flex-basis: 60%;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.right-menu a,.head-menu-items a{
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.right-menu a:hover,.active-status{
+  background: #000;
+  color: #fff !important;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.active-items,.head-menu-items a:hover{
+  color: crimson !important;
+  font-weight: bold;
+  border-bottom: 5px solid crimson;
+  margin: 5px;
+}
+.right-menu{
+ flex-basis: 20%;
+}
+.home{
+  background-color: #e9eff1;
+  z-index: -1;
+}
+.home-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: linear-gradient(90deg,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.home-content{
+  text-align: center;
+  width: 50%;
+}
+.home-content h1{
+  color: crimson;
+  text-shadow: 2px 2px 2px #000;
+  padding: 10px;
+}
+.home-content p{
+  color: #ffc107;
+  text-shadow: 2px 2px 2px #000;
+  padding: 10px;
+}
+.lower-content{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 70%;
+  left: 10%;
+  width: 80%;
+  height: 30%;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5),-10px -10px 10px rgba(0,0,0,0.5),-10px 10px 10px rgba(0,0,0,0.5),10px -10px 10px rgba(0,0,0,0.5);
+}
+.middle-content{
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #e9eff1;
+  font-family: 'Pattaya', sans-serif;
+}
+.lower:nth-child(even){
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.lower-content h3{
+  font-family: 'Pattaya', sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
+.team{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+.team-card{
+  margin: 10px;
+  flex-shrink: 2;
+  width: 320px;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 3px 10px 2px rgba(22, 22, 22, 0.2);
+}
+.team-img{
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  background-color: silver;
+  transition: 0.2s;
+  z-index: 2;
+}
+
+.team-card:hover .team-img{
+  bottom: 80px;
+}
+
+.team-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-detail{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  left: 10px;
+  text-align: center;
+  height: 60px;
+}
+
+.team-detail h2 {
+  font-weight: bold;
+  color: rgb(47, 46, 46);
+}
+
+.team-detail p {
+  color: rgb(207, 69, 110);
+}
+.home-end{
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+footer{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+.menu-toggle{
+  display: none;
+}
+@media (max-width: 1000px) {
+  .menu-toggle{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .head-menu-items a,.right-menu a{
+    display: block;
+  }
+  .head-menu,.right-menu{
+    display: none;
+  }
+  .header-main{
+    flex-direction: column;
+  }
+  .lower-content{
+    display: none;
+  }
+  .App{
+    padding: 0;
+  }
+  header{
+    position: relative;
+    padding: 5px;
+  }
+}
